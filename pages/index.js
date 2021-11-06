@@ -63,10 +63,6 @@ export default function Home() {
         <title>Aled Jones - Developer &amp; Designer</title>
         <meta name="description" content="Aled Jones - Front-End Developer &amp; Designer" />
         <link rel="icon" href="/favicon.ico" />
-        <link rel="preconnect" href="https://fonts.googleapis.com"/>
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
-        <link href="https://fonts.googleapis.com/css2?family=Zen+Antique&display=swap" rel="stylesheet"/>
-
       </Head>
 
       <main className={styles.main}>
