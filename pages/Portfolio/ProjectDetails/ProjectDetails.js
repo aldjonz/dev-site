@@ -24,14 +24,6 @@ export default function ProjectDetails(props) {
 
     const screenWidth = useWindowSize();
 
-    const detectOS = () => {
-        if(navigator.userAgent.indexOf("Mac") !=-1) {
-            return "MacOS"
-        } else {
-            return "Android"
-        };
-    };
-
     useEffect(() => {
         if(props.isOpen) {
                 setScale("100%");
@@ -50,7 +42,7 @@ export default function ProjectDetails(props) {
                     <div className={styles.overlayContainer} >
                         <div className={styles.textContainer} style={{ width: screenWidth > 1024 && props.project.preview.length > 0 ? '50%' : '100%' }}>
                             <div className={styles.descriptionContainer} >
-                                <a color="blue" className={styles.projectLink} target="_blank" rel="noreferrer" href={!Array.isArray(props.project.link) ? props.project.link : detectOS() !== "MacOS" ? props.project.link[0] : props.project.link[1]}>Check out the project here!</a>
+                                <a color="blue" className={styles.projectLink} target="_blank" rel="noreferrer" href={!Array.isArray(props.project.link) ? props.project.link : props.project.link[0] }>Check out the project here!</a>
                                 <Text className={styles.projectDesc}>{props.project.desc}</Text>
                             </div>
                             <div className={styles.techContainer}>
@@ -66,9 +58,9 @@ export default function ProjectDetails(props) {
                         </div>
                         {props.project.preview.length > 0 ?
                             props.project.type === "app" ?
-                            <EntireAppPreview alt={props.project.title} mockups={props.project.preview} link={props.project.link} />
+                                <EntireAppPreview alt={props.project.title} mockups={props.project.preview} link={props.project.link} />
                             :
-                            <WebsitePreview alt={props.project.title} mockups={props.project.preview} link={props.project.link} />
+                                <WebsitePreview alt={props.project.title} mockups={props.project.preview} link={props.project.link} />
                         :
                             null
                         }
