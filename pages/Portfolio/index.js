@@ -6,7 +6,7 @@ import { toggleDisplay, toggleSelectedId } from '../../redux/actions';
 import ProjectPreview from './ProjectPreview/ProjectPreview';
 import { Button } from '@geist-ui/react';
 
-export default function index() {
+export default function Portfolio() {
     const [displayPortfolio, setDisplayPortfolio] = useState(false);
     const [initClick, setInitClick] = useState(false);
     const [btnOpacity, setBtnOpacity] = useState(1);

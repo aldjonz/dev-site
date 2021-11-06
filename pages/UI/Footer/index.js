@@ -6,7 +6,7 @@ import React, { useEffect, useRef, useState, useLayoutEffect } from 'react';
 import { useSelector } from 'react-redux';
 import styles from '../../../styles/Home.module.css';
 
-export default function index(props) {
+export default function Footer(props) {
     const [link0Pos, setLink0Pos] = useState('0%');
     const [link1Pos, setLink1Pos] = useState('0%');
     const [link2Pos, setLink2Pos] = useState('0%');

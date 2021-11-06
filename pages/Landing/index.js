@@ -16,7 +16,7 @@ function useWindowSize() {
     return width;
   }
 
-export default function index(props) {
+export default function Landing(props) {
     const [xPos, setXPos] = useState(400);
     const [textOpacity, setTextOPacity] = useState(0);
     const [textXPos, setTextXPos] = useState('0%');
