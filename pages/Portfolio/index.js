@@ -1,5 +1,5 @@
 import React, { useState, useEffect, useRef } from 'react';
-import * as projects from './portfolioProjects/projects.json';
+import projects from './portfolioProjects/projects.json';
 import styles from '../../styles/Portfolio.module.css';
 import { useDispatch, useSelector } from 'react-redux';
 import { toggleDisplay, toggleSelectedId } from '../../redux/actions';
