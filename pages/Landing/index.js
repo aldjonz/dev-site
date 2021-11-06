@@ -57,7 +57,7 @@ export default function Landing(props) {
     return (
         <div className={styles.landingContainer}>
             <div style={{ transform: `translateY(${titleYPos}px)`, transition: '1s ease-in-out' }}>
-                <Text h1 style={{ opacity: textOpacity, transition: 'ease-out, 1.4s' }} className={styles.name}>Hi, I'm Aled</Text>
+                <Text h1 style={{ opacity: textOpacity, transition: 'ease-out, 1.4s' }} className={styles.name}>Hi, I&apos;m Aled</Text>
                 <Divider h={2} mx={7}></Divider>
             </div>
             <div style={{ transform: `translateX(${textXPos})`, transitionDuration: '1s' }} className={styles.descriptionContainer}>
@@ -68,7 +68,7 @@ export default function Landing(props) {
                 </div>
                 <div style={{ width: '100vw' }}>
                     <div ref={aboutRef} className={styles.aboutContainer}>
-                        <Text className={styles.aboutText}>I'm a front-end devloper and designer from the UK. I design, create and support websites and applications for clients and for fun. I use modern technology to create exceptional user experiences, and always strive to create high quality products.</Text>
+                        <Text className={styles.aboutText}>I&apos;m a front-end devloper and designer from the UK. I design, create and support websites and applications for clients and for fun. I use modern technology to create exceptional user experiences, and always strive to create high quality products.</Text>
                         <Text className={styles.aboutText}>During the Covid-19 pandemic I was aware that I may never have such an opportunity to have so much free time ever again so I made the most of my time in lockdown and learnt to code. After 9 months of learning I had my first contract and have been freelancing ever since.</Text>
                     </div>
                 </div>
