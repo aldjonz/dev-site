@@ -87,9 +87,10 @@ export default function index() {
 
     return (
         <div className={styles.container}>
-            {skills.map((skill) => {
+            {skills.map((skill,index) => {
                 return (
                     <SkillIcon 
+                        key={index}
                         img={skill.img}
                         title={skill.title}
                         href={skill.link}

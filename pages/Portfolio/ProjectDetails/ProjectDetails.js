@@ -50,13 +50,13 @@ export default function ProjectDetails(props) {
                     <div className={styles.overlayContainer} >
                         <div className={styles.textContainer} style={{ width: screenWidth > 1024 && props.project.preview.length > 0 ? '50%' : '100%' }}>
                             <div className={styles.descriptionContainer} >
-                                <a color="blue" className={styles.projectLink} target="_blank" href={!Array.isArray(props.project.link) ? props.project.link : detectOS() !== "MacOS" ? props.project.link[0] : props.project.link[1]}>Check out the project here!</a>
+                                <a color="blue" className={styles.projectLink} target="_blank" rel="noreferrer" href={!Array.isArray(props.project.link) ? props.project.link : detectOS() !== "MacOS" ? props.project.link[0] : props.project.link[1]}>Check out the project here!</a>
                                 <Text className={styles.projectDesc}>{props.project.desc}</Text>
                             </div>
                             <div className={styles.techContainer}>
-                                {props.project.tech.map((tech) => {
+                                {props.project.tech.map((tech, index) => {
                                     return (
-                                        <div className={styles.relevantTech}>
+                                        <div key={index} className={styles.relevantTech}>
                                             <img src={tech.logo} alt={`${tech.title} logo`} className={styles.techImg} />
                                             <Text className={styles.relevantTechTitle}>{tech.title}</Text>
                                         </div>

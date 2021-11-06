@@ -103,6 +103,7 @@ export default function ProjectPreview(props) {
             {blankCards.map((card, index) => {
                 return (
                     <Card 
+                        key={index}
                         index={index}
                         cardStyles={blankCards}
                         delay={0.1 * index}
@@ -115,6 +116,7 @@ export default function ProjectPreview(props) {
             {props.projects.map((project, index) => {
                 return( 
                     <Card 
+                        key={index}
                         index={index} 
                         project={project}
                         cardStyles={cardStyles}

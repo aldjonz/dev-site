@@ -131,10 +131,10 @@ export default function Footer(props) {
 
             </div>
             <div className={styles.socialContainer} style={{ transform: `translateY(${socialLinkPos}px)`, transitionDuration: '1s', transitionDelay: router.asPath === "/" ? '0.8s' : '0s' }}>
-                <a href="https://github.com/aldjonz" target="_blank" className={styles.socialLink}>
+                <a href="https://github.com/aldjonz" target="_blank" className={styles.socialLink} rel="noreferrer">
                     <FontAwesomeIcon icon={faGithub} className={styles.socialIcon} />
                 </a>
-                <a href="https://www.linkedin.com/in/aled-jones-60843920a/" target="_blank" className={styles.socialLink}>
+                <a href="https://www.linkedin.com/in/aled-jones-60843920a/" target="_blank" className={styles.socialLink} rel="noreferrer">
                     <FontAwesomeIcon icon={faLinkedin} className={styles.socialIcon} />
                 </a>
             </div>
