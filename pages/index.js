@@ -6,7 +6,7 @@ import { useRouter } from 'next/router';
 import { toggleDisplay } from '../redux/actions';
 import { useSelector, useDispatch } from 'react-redux';
 
-import * as projects from './Portfolio/portfolioProjects/projects.json';
+import * as projectsJSON from './Portfolio/portfolioProjects/projects.json';
 import Layout from '../Layout';
 import Footer from './UI/Footer';
 import Landing from './Landing';
@@ -108,7 +108,7 @@ export default function Home() {
           }}
         />
           <ProjectDetails 
-            project={projects.projects.find((project) => project.id === selectedId)}
+            project={projectsJSON.projects.find((project) => project.id === selectedId)}
             onClose={() => dispatch(toggleDisplay('TOGGLE'))}
             isOpen={isOpen}
           />
