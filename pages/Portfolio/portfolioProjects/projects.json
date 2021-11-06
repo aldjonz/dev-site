@@ -95,7 +95,7 @@
         "img": "./portfolio/GuidaCaffe/guida-caffe.png",
         "color": "rgba(255,255,255,1)",
         "desc": "Guida Caffe is an extension of the ongoing project Italian Specialty Coffee Guide by designer Leonardo Santetti to map out coffee shops that offer specialty coffee. Based in Italy, the app has been successful in providing both locals and tourists with a way of finding great coffee throughout the country. I personally handled the build of the entire app and contributed to the design of it too. Predominantly front-end, the app was built using React-Native and the data is managed in FireBase. My previous knowledge of react-native-maps was also used in this project but I gained a deeper of understanding map integration from this.",
-        "link": ["https://play.google.com/store/apps/details?id=com.guidacaffe.app", "https://apps.apple.com/gb/app/guida-caff%C3%A8/id1584978048"],
+        "link": "https://apps.apple.com/gb/app/guida-caff%C3%A8/id1584978048",
         "tech": [
             {
                 "title": "React-Native",
@@ -137,7 +137,7 @@
         "img": "./portfolio/TrailTale/trailtale.png",
         "color": "rgba(118,192,144,1)",
         "desc": "TrailTale is a UK based travel app that provides users with free and easy to use walking tours in UK cities and towns. Users can view walks nearby through the map or the list of walks provided and are guided around the area via the app with audio, text and images to explain the history and relevance of each POI. The project was a rebuild of an already existing version of the app to update it to better handle the larger amount of data it uses. I used React-Native for the rebuild to save time and money for the client because not only does it require half the amount of code but Expo makes testing and building much easier. This project also gave me a good understanding of the popular package react-native-maps as it handles thousand of markers at any one time whilst still maintaining a high level of performance.",
-        "link": ["https://play.google.com/store/apps/details?id=com.trailtale.app&hl=en_GB&gl=US", "https://apps.apple.com/gb/app/trailtale/id1093099333"],
+        "link": "https://www.trailtale.co.uk/",
         "tech": [
             {
                 "title": "React-Native",

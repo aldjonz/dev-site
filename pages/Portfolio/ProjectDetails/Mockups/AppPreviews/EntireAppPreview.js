@@ -6,9 +6,9 @@ import { Text } from '@geist-ui/react';
 export default function EntireAppPreview(props) {
     return (
         <div className={styles.appPreviewContainer}>
-            {/* <div style={{ width: '26%', position: 'absolute', zIndex: 2 }}>
+            <div style={{ width: '26%', position: 'absolute', zIndex: 2 }}>
                 <AppPreview img={props.mockups[0]} link={props.link} />
-            </div> */}
+            </div>
             <div style={{ width: '26%', position: 'absolute', left: '16%', zIndex: 1 }}>
                 <AppPreview img={props.mockups[1]} link={props.link} />
             </div>
