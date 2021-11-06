@@ -1,0 +1,82 @@
+.nextBtn {
+  font-weight: 300;
+  color: #333;
+  transition: ease-out, 1s;
+}
+.layoutWrapper {
+  height: 100vh;
+  width: 100vw;
+  position: absolute;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  background-color: rgba(255, 255, 255, 0.4);
+}
+.contact {
+  position: absolute;
+  right: 16px;
+  top: 0;
+  cursor: pointer;
+}
+.contactInfoContainer {
+  width: 96vw;
+  height: 96vh;
+  position: absolute;
+  background-color: #fff;
+  left: 2vw;
+  top: 2vh;
+  z-index: 10000;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.6);
+}
+.emailLink {
+  position: relative;
+  display: inline-block;
+  font-size: 6.75vw;
+  font-weight: 600;
+  overflow: hidden;
+  background: linear-gradient(to right, #219ebc, #219ebc 50%, #353431 50%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-size: 200% 100%;
+  background-position: 100%;
+  transition: background-position 600ms ease;
+}
+.emailLink:hover {
+  background-position: 0 100%;
+}
+.closeBtn {
+  height: 24px;
+  align-self: flex-end;
+  margin-right: 16px;
+  margin-top: 16px;
+  cursor: pointer;
+}
+.socialIcon {
+  height: 24px;
+}
+.socialLink {
+  margin: 8px;
+  color: #000;
+}
+@media only screen and (min-width: 768px) and (orientation: portrait) {
+  .contact {
+    font-size: 2.4vw;
+  }
+  .getInTouch {
+    font-size: 24px;
+  }
+  .closeBtn {
+    height: 40px;
+  }
+}
+@media only screen and (min-width: 768px) {
+  .emailLink {
+    font-size: 46px;
+  }
+}

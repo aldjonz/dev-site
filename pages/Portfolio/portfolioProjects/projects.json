@@ -1,0 +1,176 @@
+{"projects": [
+    {
+        "id": 0,
+        "title": "Wych Elm",
+        "img": "./portfolio/WychElm/wych-elm.png",
+        "color": "rgba(246,239,221,1)",
+        "desc": "Wych Elm is an up and coming Bristol band who I was lucky enough to work with to build their website. They wanted a site to showcase their music, sell merchandise, show upcoming tour dates and add fans to their mailing list. We decided to use WordPress to build the site as it is a cost effective and quick way to build a site with e-commerce capabilities that looks modern and responsive. The site uses the WooCommerce plugin to handle the e-commerce section and also features Stripe Integration. To build the site I used the popular Elementor plugin but styled most sections with custom CSS.",
+        "link": "https://wychelm.band/",
+        "tech": [
+            {
+                "title": "WordPress",
+                "logo": "./skills/wordpress.png"
+            },
+            {
+                "title": "CSS",
+                "logo": "./skills/css3.svg"
+            },
+            {
+                "title": "WooCommerce",
+                "logo": "./skills/woocommerce.png"
+            },
+            {
+                "title": "Elementor",
+                "logo": "./skills/elementor.png"
+            }
+        ],
+        "preview": [
+            "./portfolio/WychElm/wychelm-desktop.png",
+            "./portfolio/WychElm/wych-elm-mobile.png"
+        ],
+        "type": "website"
+    },
+    {
+        "id": 1,
+        "title": "Cambridge Carbon Map",
+        "img": "./portfolio/CCM/CCM.png",
+        "color": "rgba(255,255,255,1)",
+        "desc": "I have been actively contributing to the open source project “Cambridge Carbon Map” along with a team of developers. The app aims to make businesses' and organisations’ carbon emissions data visible, understandable and available for everyone so that they can find inspiration from one another to reduce their impact on the planet. The beta version of the project is to be released before the end of 2021. In order to make the data understandable we opted to use OpenStreetMap, a user can select or search for a business/organisation through the web app and view it’s emissions data within a selected date range along with the entity’s actions/steps they are taking to reduce their impact on the planet. I work primarily on the front-end of the app alongside other developers to make the app user-friendly and the emissions data more accessible. The project is built using the Ionic framework so that in future it may be made into an app with ease. The back-end is built using Python and Django to manage the data and user login state.",
+        "link": "https://cambridgecarbonmap.org/",
+        "tech": [
+            {
+                "title": "Ionic React",
+                "logo": "./skills/ionic.png"
+            },
+            {
+                "title": "Redux",
+                "logo": "./skills/redux.png"
+            },
+            {
+                "title": "TypeScript",
+                "logo": "./skills/typescript.png"
+            },
+            {
+                "title": "CSS",
+                "logo": "./skills/css3.svg"
+            },
+            {
+                "title": "SQLite",
+                "logo": "./skills/sqlite.jpeg"
+            }
+        ],
+        "preview": [],
+        "type": "website"
+    },
+    {
+        "id": 4,
+        "title": "Medjay Communications",
+        "img": "./portfolio/Medjay/medjay.png",
+        "color": "rgba(255,255,255,1)",
+        "desc": "Medjay Communications was an IoT startup in South Wales. The company planned to build out an IoT network throughout the UK and needed a landing page to display their services when they were initially starting out but unfortunately have since closed down. The site was built using Next.js and CSS and is hosted using Vercel.",
+        "link": "https://medjay.co.uk/",
+        "tech": [
+            {
+                "title": "Next.js",
+                "logo": "./skills/next-js.svg"
+            },
+            {
+                "title": "CSS",
+                "logo": "./skills/css3.svg"
+            },
+            {
+                "title": "Vercel",
+                "logo": "./skills/vercel.png"
+            }
+        ],
+        "preview": [
+            "./portfolio/Medjay/medjay-desktop.png",
+            "./portfolio/Medjay/medjay-mobile.png"
+        ],
+        "type": "website"
+    },
+    {
+        "id": 2,
+        "title": "Guida Caffè",
+        "img": "./portfolio/GuidaCaffe/guida-caffe.png",
+        "color": "rgba(255,255,255,1)",
+        "desc": "Guida Caffe is an extension of the ongoing project Italian Specialty Coffee Guide by designer Leonardo Santetti to map out coffee shops that offer specialty coffee. Based in Italy, the app has been successful in providing both locals and tourists with a way of finding great coffee throughout the country. I personally handled the build of the entire app and contributed to the design of it too. Predominantly front-end, the app was built using React-Native and the data is managed in FireBase. My previous knowledge of react-native-maps was also used in this project but I gained a deeper of understanding map integration from this.",
+        "link": ["https://play.google.com/store/apps/details?id=com.guidacaffe.app", "https://apps.apple.com/gb/app/guida-caff%C3%A8/id1584978048"],
+        "tech": [
+            {
+                "title": "React-Native",
+                "logo": "./skills/react.svg"
+            },
+            {
+                "title": "Redux",
+                "logo": "./skills/redux.png"
+            },
+            {
+                "title": "CSS StyleSheet",
+                "logo": "./skills/css3.svg"
+            },
+            {
+                "title": "react-native-maps",
+                "logo": "./skills/google-maps.png"
+            },
+            {
+                "title": "SQLite",
+                "logo": "./skills/sqlite.jpeg"
+            },
+            {
+                "title": "Expo",
+                "logo": "./skills/expo.png"
+            }
+        ],
+        "preview": [
+            "./portfolio/GuidaCaffe/splash-mockup.png",
+            "./portfolio/GuidaCaffe/map-mockup.png",
+            "./portfolio/GuidaCaffe/shop-mockup.png",
+            "./portfolio/GuidaCaffe/roaster-mockup.png",
+            "./portfolio/GuidaCaffe/calculator-mockup.png"
+        ],
+        "type": "app"
+    },
+    {
+        "id": 3,
+        "title": "TrailTale",
+        "img": "./portfolio/TrailTale/trailtale.png",
+        "color": "rgba(118,192,144,1)",
+        "desc": "TrailTale is a UK based travel app that provides users with free and easy to use walking tours in UK cities and towns. Users can view walks nearby through the map or the list of walks provided and are guided around the area via the app with audio, text and images to explain the history and relevance of each POI. The project was a rebuild of an already existing version of the app to update it to better handle the larger amount of data it uses. I used React-Native for the rebuild to save time and money for the client because not only does it require half the amount of code but Expo makes testing and building much easier. This project also gave me a good understanding of the popular package react-native-maps as it handles thousand of markers at any one time whilst still maintaining a high level of performance.",
+        "link": ["https://play.google.com/store/apps/details?id=com.trailtale.app&hl=en_GB&gl=US", "https://apps.apple.com/gb/app/trailtale/id1093099333"],
+        "tech": [
+            {
+                "title": "React-Native",
+                "logo": "./skills/react.svg"
+            },
+            {
+                "title": "Redux",
+                "logo": "./skills/redux.png"
+            },
+            {
+                "title": "CSS StyleSheet",
+                "logo": "./skills/css3.svg"
+            },
+            {
+                "title": "react-native-maps",
+                "logo": "./skills/google-maps.png"
+            },
+            {
+                "title": "SQLite",
+                "logo": "./skills/sqlite.jpeg"
+            },
+            {
+                "title": "Expo",
+                "logo": "./skills/expo.png"
+            }
+        ],
+        "preview": [
+            "./portfolio/TrailTale/landing-mockup.png",
+            "./portfolio/TrailTale/explore-mockup.png",
+            "./portfolio/TrailTale/walk-map-mockup.png",
+            "./portfolio/TrailTale/walk-list-mockup.png",
+            "./portfolio/TrailTale/guide-mockup.png"
+        ],
+        "type": "app"
+    }
+]}
