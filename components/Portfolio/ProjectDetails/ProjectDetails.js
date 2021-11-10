@@ -20,20 +20,23 @@ function useWindowSize() {
   }
 
 export default function ProjectDetails(props) {
-    const [scale, setScale] = useState("0%");
+    const [overlayClass, setOverlayClass] = useState(styles.hideOverlay);
 
     const screenWidth = useWindowSize();
 
     useEffect(() => {
         if(props.isOpen) {
-                setScale("100%");
+            setOverlayClass(styles.displayOverlay)
         } else {
-            setScale("0%");
+            setOverlayClass(styles.hideOverlay);
         }
     }, [props.isOpen]);
     
     return (
-        <div className={styles.outerContainer} style={{ transform: `scale(${scale})`, transformOrigin: 'bottom left', transitionDuration: '0.6s', position: 'absolute', zIndex: 4000, overflowY: 'scroll', backgroundColor: 'white', height: '100vh', pointerEvents: props.isOpen ? 'auto' : 'none', width: '100vw', overflowX: 'hidden' }} >
+        <div 
+            className={overlayClass}
+            style={{ transitionDuration: '0.6s' }}
+        >
             <div onClick={props.onClose} className={styles.closeBtn} >
                 <FontAwesomeIcon icon={faTimes} style={{ width: 16, color: '#fff' }} />
             </div>

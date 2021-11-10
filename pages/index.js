@@ -107,11 +107,15 @@ export default function Home() {
             },
           }}
         />
+        {/* {isOpen ? */}
           <ProjectDetails 
             project={projects.projects.find((project) => project.id === selectedId)}
             onClose={() => dispatch(toggleDisplay('TOGGLE'))}
             isOpen={isOpen}
           />
+        {/* :
+          null
+        } */}
         <Layout nextPos={nextPos} prevURL={prevURL} subtitleBottom={subtitleBottom}>
           <div style={{ width: '400vw', transform: `translateX(${pagePos})`, transitionDuration: '1s', display: 'flex', flexDirection: 'row' }}>
             <div style={{ width: '200vw', display: 'flex', alignItems: 'center' }}>

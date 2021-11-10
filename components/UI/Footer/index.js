@@ -86,7 +86,6 @@ export default function Footer(props) {
             setTimeout(() => {
                 const footerRect = footerRef.current.getBoundingClientRect();
                 const pos = (props.subtitleBottom.top - footerRect.top) + (props.subtitleBottom.height / 2);
-                console.log(pos)
                 setSocialLinkPos(pos);
             }, 300);
         };

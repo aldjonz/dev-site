@@ -150,6 +150,45 @@
   transform-origin: center;
   animation: hover 3.3s infinite ease-in-out;
 }
+
+.hideOverlay {
+  transform: scale(0);
+  -webkit-transform: scale(0);
+  transform-origin: bottom left;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 4000;
+  overflow-y: scroll;
+  background-color: white;
+  height: 100vh;
+  pointer-events: none;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
+.displayOverlay {
+  transform: scale(1);
+  -webkit-transform: scale(1);
+  transform-origin: bottom left;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+  position: absolute;
+  z-index: 4000;
+  overflow-y: scroll;
+  background-color: white;
+  height: 100vh;
+  pointer-events: auto;
+  width: 100vw;
+  overflow-x: hidden;
+}
+
 @keyframes hover {
   0% {
     transform: translateY(0%);
