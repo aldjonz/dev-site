@@ -6,13 +6,13 @@ import { useRouter } from 'next/router';
 import { toggleDisplay } from '../redux/actions';
 import { useSelector, useDispatch } from 'react-redux';
 
-import projects from './Portfolio/portfolioProjects/projects.json';
+import projects from '../components/Portfolio/portfolioProjects/projects.json';
 import Layout from '../Layout';
-import Footer from './UI/Footer';
-import Landing from './Landing';
-import Portfolio from './Portfolio';
-import Skills from './Skills';
-import ProjectDetails from './Portfolio/ProjectDetails/ProjectDetails';
+import Footer from '../components/UI/Footer';
+import Landing from '../components/Landing';
+import Portfolio from '../components/Portfolio';
+import Skills from '../components/Skills';
+import ProjectDetails from '../components/Portfolio/ProjectDetails/ProjectDetails';
 
 function useWindowSize() {
   const [size, setSize] = useState([0,0]);

@@ -56,7 +56,7 @@ export default function ProjectDetails(props) {
                                 })}
                             </div>
                         </div>
-                        {props.project.id === 1 ?
+                        {props.project.id !== 1 ?
                             props.project.type === "app" ?
                                 <EntireAppPreview alt={props.project.title} mockups={props.project.preview} link={props.project.link} />
                             :
